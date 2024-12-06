@@ -1,5 +1,5 @@
 {
-  "name": "@injectit/threejs-nodejs-exporters",
+  "name": "@zarni/threejs-nodejs-exporters",
   "version": "0.0.2",
   "description": "Nodejs package for generate threejs models",
   "main": "index.js",

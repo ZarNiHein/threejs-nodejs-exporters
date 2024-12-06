@@ -6,6 +6,8 @@
 
 ### Basic usage
 
+forked the git repo @injectit/threejs-nodejs-exporters
+
 ```javascript
 const THREE = require('three')
 const NodeThreeExporter = require('@injectit/threejs-nodejs-exporters')

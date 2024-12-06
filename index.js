@@ -112,7 +112,16 @@ class NodeThreeExporter {
       } catch (err) {
         onError(err)
       }
-    } else {
+    } else if (format === 'glb') {
+      try {
+        this.gltfExporter.parse(object, modelData => {
+          const buffer = Buffer.from(JSON.stringify(modelData));
+          onParse(buffer);
+        }, { binary: true }); 
+      } catch (err) {
+        onError(err)
+      }
+    }else {
       console.warn('Unknow generating format! Available formats: gltf, usdz')
     }
   }
